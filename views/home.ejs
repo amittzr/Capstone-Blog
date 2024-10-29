@@ -1,0 +1,28 @@
+<%- include("partials/header.ejs") %>
+
+<header>
+    <h1>My Blog</h1>
+    <a href="/new-post" class="btn">Create New Post</a>
+</header>
+<!-- <form action="/new-post" method="POST">
+    <input type="submit" value="Generate New Post">
+</form> -->
+
+
+<% if (blogPosts.length > 0) { %>
+    <% blogPosts.forEach((post, index) => { %>
+      <div class="post">
+        <h2><a href="/post/<%= index %>"><%= post.title %></a></h2>
+        <p><%= post.content.substring(0, 100) %>...</p>
+        <a href="/edit-post/<%= index %>" class="btn edit-btn">Edit</a>
+        <form action="/delete-post/<%= index %>" method="POST" class="inline-form">
+          <button type="submit" class="btn delete-btn">Delete</button>
+        </form>
+      </div>
+    <% }) %>
+  <% } else { %>
+    <p>No posts available.</p>
+  <% } %>
+
+
+<%- include("partials/footer.ejs") %>

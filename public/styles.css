@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #5cb85c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.post {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+  
+form.inline-form {
+  display: inline;
+}
+
+form.inline-form button {
+  background-color: #d9534f;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form.post-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;  /* Centers the form horizontally */
+    
+}
+
+
+form.post-form input[type="text"],
+form.post-form textarea {
+  width: 100%;  /* Makes input and textarea full width of the container */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form.post-form textarea {
+  resize: vertical;  /* Allows vertical resizing of the textarea */
+}
+
+form.post-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form.post-form button:hover {
+  background-color: #4cae4c;
+}
